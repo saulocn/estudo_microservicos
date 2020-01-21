@@ -18,3 +18,18 @@ Content-Type: application/json
         "estado":"SP"
     }
 }
+
+###
+GET http://localhost:8081/info/SP
+Content-Type: application/json
+
+ 
+### EUREKA APPS
+
+###
+GET http://localhost:8761/eureka/apps
+ 
+### Config-Server Fornecedor
+
+###
+GET http://localhost:8888/fornecedor/default
