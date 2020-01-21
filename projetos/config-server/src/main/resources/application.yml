@@ -6,7 +6,10 @@ spring:
   cloud:
     config:
       server:
-        native:
-          search-locations:
-          -  /home/saulo/workspace/estudo_microservicos
+        git:
+          uri: https://github.com/saulocn/estudo_microservicos/
+          search-paths: fornecedor
+        #native:
+        #  search-locations:
+        #  -  /home/saulo/workspace/estudo_microservicos
           
