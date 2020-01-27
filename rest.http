@@ -63,3 +63,15 @@ Content-Type: application/json
         "estado":"SP"
     }
 }
+
+###
+POST http://localhost:8088/oauth/token
+Authorization: Basic loja lojapwd
+Content-Type: application/x-www-form-urlencoded
+
+scope=web&grant_type=password&username=joao&password=joaopwd
+
+
+###
+GET http://localhost:8088/user
+Authorization: dc01bed5-05cc-4fc2-9185-e8abc7d212b6
