@@ -24,6 +24,13 @@ Content-Type: application/json
 
 
 ###
+GET http://localhost:8081/produto/SP
+
+###
+POST http://localhost:8081/pedido
+Authorization: Bearer 37bc730c-082a-4cf3-80c9-bb74efe7d0f0
+
+###
 GET http://localhost:8080/compra/2
  
 ### EUREKA APPS
@@ -45,6 +52,7 @@ GET http://localhost:5555/fornecedor/info/SP
 ###
 POST http://localhost:5555/loja/compra
 Content-Type: application/json
+Authorization: Bearer 9adaa92e-2682-4da9-a8d7-b55d6b0c8069
 
 {
     "itens":[
@@ -74,4 +82,4 @@ scope=web&grant_type=password&username=joao&password=joaopwd
 
 ###
 GET http://localhost:8088/user
-Authorization: dc01bed5-05cc-4fc2-9185-e8abc7d212b6
+Authorization: Bearer 37bc730c-082a-4cf3-80c9-bb74efe7d0f0
