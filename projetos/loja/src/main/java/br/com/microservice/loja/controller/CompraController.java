@@ -1,6 +1,8 @@
 package br.com.microservice.loja.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +23,7 @@ public class CompraController {
 	public Compra realizaCompra(@RequestBody CompraDto compra) {
 		return compraService.realizaCompra(compra);
 	}
-	
+
 	@RequestMapping("/{id}")
 	public Compra getById(@PathVariable Long id) {
 		return compraService.getById(id);
