@@ -35,3 +35,31 @@ GET http://localhost:8761/eureka/apps
 
 ###
 GET http://localhost:8888/fornecedor/default
+
+###
+GET http://localhost:5555/actuator/routes
+
+###
+GET http://localhost:5555/fornecedor/info/SP
+
+###
+POST http://localhost:5555/loja/compra
+Content-Type: application/json
+
+{
+    "itens":[
+        {
+            "id":1,
+            "quantidade":5
+        },
+        {
+            "id":2,
+            "quantidade":10
+        }
+    ],
+    "endereco":{
+        "rua":"Rua das Jabuticabas",
+        "numero":12313,
+        "estado":"SP"
+    }
+}
