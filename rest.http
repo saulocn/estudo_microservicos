@@ -24,7 +24,7 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:8080/compra/4
+GET http://localhost:8080/compra/2
  
 ### EUREKA APPS
 

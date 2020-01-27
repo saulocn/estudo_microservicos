@@ -13,4 +13,5 @@ spring:
           search-locations:
           -  /home/saulo/workspace/estudo_microservicos/fornecedor/
           -  /home/saulo/workspace/estudo_microservicos/loja/
+          -  /home/saulo/workspace/estudo_microservicos/transportador/
           

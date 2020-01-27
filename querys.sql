@@ -4,6 +4,8 @@ select * from `fornecedor`.`produto`;
 
 SELECT * FROM `loja`.`compra` LIMIT 1000;
 
+create database transportador
+
 begin;
 
 insert into fornecedor.info_fornecedor 
